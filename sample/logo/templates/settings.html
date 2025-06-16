@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Settings | Titan Dashboard{% endblock %}
+
+{% block header %}Settings{% endblock %}
+
+{% block content %}
+  <h2>Application Settings</h2>
+  <p>Update preferences and configurations for your account and the system.</p>
+
+  <form method="POST" style="margin-top: 20px;">
+    {% csrf_token %}
+    <label style="display: block; margin-bottom: 10px;">
+      <strong>Notification Email:</strong><br>
+      <input type="email" name="notification_email" value="john.doe@example.com" style="padding: 8px; width: 100%; border-radius: 5px; border: none;">
+    </label>
+
+    <label style="display: block; margin-bottom: 10px;">
+      <strong>Dark Mode:</strong><br>
+      <select name="theme" style="padding: 8px; width: 100%; border-radius: 5px; border: none;">
+        <option value="enabled">Enabled</option>
+        <option value="disabled">Disabled</option>
+      </select>
+    </label>
+
+    <button type="submit" style="padding: 10px 20px; background-color: #28a745; border: none; border-radius: 5px; color: white;">Save Settings</button>
+  </form>
+{% endblock %}

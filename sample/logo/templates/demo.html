@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard with Table</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+        }
+        .sidebar ul li:hover {
+            background-color: #575757;
+        }
+        .main-content {
+            margin-left: 260px;
+            padding: 20px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            font-size: 15px;
+        }
+        th {
+            background-color: #f4f4f4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+            <li>Home</li>
+            <li>Analytics</li>
+            <li>Settings</li>
+            <li>Profile</li>
+            <li>Logout</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>Data Table</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Occupation</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data rows with email -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>28</td>
+                    <td>New York</td>
+                    <td>Engineer</td>
+                    <td>john.doe@example.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>34</td>
+                    <td>Los Angeles</td>
+                    <td>Doctor</td>
+                    <td>jane.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mike Johnson</td>
+                    <td>41</td>
+                    <td>Chicago</td>
+                    <td>Teacher</td>
+                    <td>mike.johnson@example.com</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Emily Davis</td>
+                    <td>29</td>
+                    <td>Houston</td>
+                    <td>Artist</td>
+                    <td>emily.davis@example.com</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Chris Brown</td>
+                    <td>35</td>
+                    <td>San Francisco</td>
+                    <td>Designer</td>
+                    <td>chris.brown@example.com</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Alice Williams</td>
+                    <td>23</td>
+                    <td>Miami</td>
+                    <td>Developer</td>
+                    <td>alice.williams@example.com</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>David Lee</td>
+                    <td>27</td>
+                    <td>Seattle</td>
+                    <td>Photographer</td>
+                    <td>david.lee@example.com</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Susan Taylor</td>
+                    <td>33</td>
+                    <td>Boston</td>
+                    <td>Chef</td>
+                    <td>susan.taylor@example.com</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Robert Harris</td>
+                    <td>40</td>
+                    <td>Denver</td>
+                    <td>Architect</td>
+                    <td>robert.harris@example.com</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Katherine Clark</td>
+                    <td>32</td>
+                    <td>San Diego</td>
+                    <td>Engineer</td>
+                    <td>katherine.clark@example.com</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Tom Walker</td>
+                    <td>25</td>
+                    <td>Austin</td>
+                    <td>Musician</td>
+                    <td>tom.walker@example.com</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Olivia Martinez</td>
+                    <td>30</td>
+                    <td>Dallas</td>
+                    <td>Teacher</td>
+                    <td>olivia.martinez@example.com</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>James Wilson</td>
+                    <td>38</td>
+                    <td>Atlanta</td>
+                    <td>Writer</td>
+                    <td>james.wilson@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

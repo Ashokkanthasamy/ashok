@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Delete Person | Titan Dashboard{% endblock %}
+
+{% block header %}Confirm Deletion{% endblock %}
+
+{% block content %}
+  <div style="background-color: #2e2e2e; padding: 30px; border-radius: 10px; max-width: 600px;">
+    <h2 style="color: #ff4d4d;">Are you sure you want to delete this record?</h2>
+    <p><strong>Name:</strong> {{ record.firstname }} {{ record.lastname }}</p>
+    <p><strong>Email:</strong> {{ record.email }}</p>
+    <p><strong>City:</strong> {{ record.city }}</p>
+
+    <form method="POST" style="margin-top: 20px;">
+      {% csrf_token %}
+      <button type="submit" style="padding: 10px 20px; background-color: #dc3545; border: none; border-radius: 5px; color: white;">Yes, Delete</button>
+      <a href="{% url 'dashboard' %}" styl
+
+        <button type="submit">Yes, delete</button>
+        <a href="{% url 'logo' %}">Cancel</a>
+    </form>
+</body>
+</html>
